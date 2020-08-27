@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap'); 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+@media screen and (max-width: 1350px) {#coinman{display:none;}}  
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +11,7 @@ body {
 }
 nav{
     width: 100%;
-    height: 75px;
+    height: 10vh;
     background-color: #009B53;
     display: flex;
     justify-content: space-between;
@@ -26,6 +27,7 @@ nav{
     width: 35px;
     height: 52px;
     margin: 0px 0px 0px 15px; /*1 - top, 2 - right, 3 - bottom, 4 - left*/ /*ou usar margin-left, right etc*/
+    cursor:pointer;
 }
 .navdireita{
     display: flex;
@@ -38,6 +40,7 @@ nav{
     display: flex;
     float: right;
     margin-right: 30px;
+    cursor:pointer;
 }
 nav ul li{
     list-style: none;
@@ -152,6 +155,7 @@ nav ul li a{
     font-size: 14px;
     border-radius: 8px;
     text-decoration: none;
+    cursor:pointer;
 }
 .btnConverter:hover{
     background-color: #008346;
@@ -165,39 +169,125 @@ nav ul li a{
     display: flex;
     justify-content: center;
 }
-footer{
+.abaixo {
     width: 100%;
-    height: 150px; 
-    margin-top: 100px; 
-    position: fixed;
-}
-.footerfooter{
-    height: 55%;
-    width: 100%;
-    background-color: #009B53;
+    height: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    float: left;
+    background-color: #009B53;
+    position: relative;
 }
-footer a{
+.abaixo .coinman{
     display: flex;
-    color: white;
+    align-items: center;
+    margin-right: 3vh;
+    float: right;
+}
+.abaixo a{
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 15px;
+    color: white;
+    margin-left: 35px;
+    text-decoration: none;
 }
-footer img{
-    display: flex;
-    float: left;
-    height: 25px;
-    width: 25px;
+.abaixo .coinman img{
+    width: 600px;
+    height: 600px;
 }
-.fotos{
+.infos h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    color: white;
     display: flex;
-    padding: 5px;
-    float: left;
+    justify-content: flex-start;
+    margin: 0 0 0 35px;
+}
+.infos li{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    color: white;
+    margin-left: 35px;
+    padding: 20px;
+}
+.infos p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: white;
+    margin-left: 35px;
+    text-align: left;
 }
 .github{
     margin: 0 5.5px 0 5px;
 }
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: #009B53;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.35s; /* 0.5 second transition effect to slide in the sidenav */
+    box-shadow: -1px 0px 10px rgba(0, 0, 0, 0.356); /*colocar sombras*/
+  }
+  .sidenav img{
+    height: 16px;
+    width: 16px;
+    margin-right: px !important;
+  }
+  .sidenav .insta{
+    margin-left: -20px;
+  }
+  .sidenav .fotos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    margin: -25px 0 0 0;
+  }
+  .sidenav .github {
+      margin: 0 0 0 -3.5px;
+  }
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 20px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.2s;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .sidenav .traco {
+    border-top: 1px solid rgba(235, 235, 235, 0.418);
+    margin-top: -1vh;
+    box-shadow: 0px -6px 3px rgba(0, 0, 0, 0.021); /*colocar sombras*/
+  }
+  .sidenav .copy{
+      font-size: 18px;
+  }
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }

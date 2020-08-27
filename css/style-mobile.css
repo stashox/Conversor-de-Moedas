@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap'); 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+@media screen and (max-width: 1350px) {#coinman{display:none;}}  
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +11,7 @@ body {
 }
 nav{
     width: 100%;
-    height: 55px;
+    height: 8vh;
     background-color: #009B53;
     display: flex;
     justify-content: space-between;
@@ -23,9 +24,10 @@ nav{
     padding: 15px; /*margem interna*/
 }
 .logomarca{
-    width: 25px;
-    height: 42px;
-    margin: 0px 0px 0px 15px; /*1 - top, 2 - right, 3 - bottom, 4 - left*/ /*ou usar margin-left, right etc*/
+    width: 4vh;
+    height: 7vh;
+    margin: 2px 0px 0px 15px; /*1 - top, 2 - right, 3 - bottom, 4 - left*/ /*ou usar margin-left, right etc*/
+    cursor:pointer;
 }
 .navdireita{
     display: flex;
@@ -33,11 +35,12 @@ nav{
     align-items: center;
 }
 .menu{
-    width: 62px;
-    height: 46px;
+    width: 5vh;
+    height: 3vh;
     display: flex;
     float: right;
     margin-right: 25px;
+    cursor:pointer;
 }
 nav ul li{
     list-style: none;
@@ -154,6 +157,7 @@ nav ul li a{
     font-size: 14px;
     border-radius: 8px;
     text-decoration: none;
+    cursor:pointer;
 }
 .btnConverter:hover{
     background-color: #008346;
@@ -163,15 +167,10 @@ nav ul li a{
        outline: 0px auto -webkit-focus-ring-color;
        outline-offset: 0px;
 }
-footer{
-    width: 100%;
-    height: 50px;
+.footerfooter{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #009B53;
 }
-footer a{
+.footerfooter a{
     display: flex;
     color: white;
     margin-left: 20px;
@@ -179,20 +178,121 @@ footer a{
     font-weight: 500;
     font-size: 15px;
 }
-footer img{
+.footerfooter img{
     height: 20px;
     width: 20px;
-    margin-right: 0px;
-}
-.footerfooter{
-    display: flex;
 }
 .fotos{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 25px;
+    float: left;
+    margin: -25px 0 0 0;
 }
-.github{
-    margin-right: -13px;
+.insta{
+    margin-left: -20px;
+}
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: #009B53;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.35s; /* 0.5 second transition effect to slide in the sidenav */
+    box-shadow: -1px 0px 10px rgba(0, 0, 0, 0.356);
+  }
+  .sidenav img{
+    height: 20px;
+    width: 20px;
+    margin-right: px !important;
+  }
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 20px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.2s;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .sidenav .traco {
+    border-top: 1px solid rgba(235, 235, 235, 0.418);
+    margin-top: -0.3vh;
+    box-shadow: 0px -6px 3px rgba(0, 0, 0, 0.021); /*colocar sombras*/
+  }
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  @media screen and (max-height: 450px) { /*uma condição que funciona em determinada resolução*/
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  .infos{
+    width: 100%;
+    height: auto;
+    background-color:#009B53;
+    padding-top: 24px;
+}
+.infos h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 0 0 25px;
+    margin-right: 15px;
+}
+.infos li{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: white;
+    margin-left: 25px;
+    margin-right: 15px;
+    padding: 20px;
+}
+.infos p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    color: white;
+    margin-left: 25px;
+    margin-right: 15px;
+    text-align: left;
+}
+.abaixo {
+    width: 100%;
+    height: 580px;
+    background-color: #009B53;
+}
+.abaixo .coinman{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.abaixo a{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    color: white;
+    margin-left: 25px;
+    text-decoration: none;
+}
+.abaixo .coinman img{
+    width: 200px;
+    height: 200px;
 }
