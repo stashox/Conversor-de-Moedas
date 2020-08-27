@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    height: 100%;
+}
+nav{
+    width: 100%;
+    height: 75px;
+    background-color: #009B53;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /*centralizados verticalmente*/
+    position: fixed; /*para manter a barra fixada na pagina inteira*/
+}
+.navesquerda{
+    display: flex;
+    align-items: center;
+    padding: 15px; /*margem interna*/
+}
+.logomarca{
+    width: 35px;
+    height: 52px;
+    margin: 0px 0px 0px 15px; /*1 - top, 2 - right, 3 - bottom, 4 - left*/ /*ou usar margin-left, right etc*/
+}
+.navdireita{
+    display: flex;
+    margin-left: 55px;
+    align-items: center;
+}
+.menu{
+    width: 82px;
+    height: 56px;
+    display: flex;
+    float: right;
+    margin-right: 30px;
+}
+nav ul li{
+    list-style: none;
+    padding: 15px;
+    display: flex;
+    float: left;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+}
+.bgHeader{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bgHeader img{
+    width: 448px;
+    height: 218px;
+    margin-top: -230px;
+    margin-bottom: -300px;
+    margin-left: 0px;
+}
+.conversores {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#moedas1{
+    margin-right: 20px;
+    width: 120px;
+    height: 50px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+.valor{
+    width: 120px;
+    height: 48px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    text-align: center;
+}
+.pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 20px 0;
+}
+.picture {
+    width: 50px;
+    height: 50px;
+}
+.conversores2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+}
+#moedas2{
+    margin-right: 20px;
+    width: 120px;
+    height: 50px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+.valor2{
+    width: 120px;
+    height: 48px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    text-align: center;
+}
+.btn{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+}
+.btnConverter{
+    width: 195px;
+    height: 56px;
+    border: 15px;
+    border-radius: 8px;
+    background-color: #009B53;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.btnConverter:hover{
+    background-color: #008346;
+}
+.btnConverter:focus {
+    outline: thin dotted;
+       outline: 0px auto -webkit-focus-ring-color;
+       outline-offset: 0px;
+   }
+.para {
+    display: flex;
+    justify-content: center;
+}
+footer{
+    width: 100%;
+    height: 150px; 
+    margin-top: 100px; 
+    position: fixed;
+}
+.footerfooter{
+    height: 55%;
+    width: 100%;
+    background-color: #009B53;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+footer a{
+    display: flex;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+footer img{
+    display: flex;
+    float: left;
+    height: 25px;
+    width: 25px;
+}
+.fotos{
+    display: flex;
+    padding: 5px;
+    float: left;
+}
+.github{
+    margin: 0 5.5px 0 5px;
+}

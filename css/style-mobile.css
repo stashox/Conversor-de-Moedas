@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    height: 100%;
+}
+nav{
+    width: 100%;
+    height: 55px;
+    background-color: #009B53;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /*centralizados verticalmente*/
+    margin-bottom: 25px;
+}
+.navesquerda{
+    display: flex;
+    align-items: center;
+    padding: 15px; /*margem interna*/
+}
+.logomarca{
+    width: 25px;
+    height: 42px;
+    margin: 0px 0px 0px 15px; /*1 - top, 2 - right, 3 - bottom, 4 - left*/ /*ou usar margin-left, right etc*/
+}
+.navdireita{
+    display: flex;
+    margin-left: 55px;
+    align-items: center;
+}
+.menu{
+    width: 62px;
+    height: 46px;
+    display: flex;
+    float: right;
+    margin-right: 25px;
+}
+nav ul li{
+    list-style: none;
+    padding: 15px;
+    display: flex;
+    float: left;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+}
+.bgHeader{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+.bgHeader img{
+    max-width: 224px;
+    max-height: 109px;
+    margin: 0;
+    padding: 0;
+}
+.conversores {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    padding-top: 0;
+}
+#moedas1{
+    margin-right: 20px;
+    width: 120px;
+    height: 50px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+.valor{
+    width: 120px;
+    height: 48px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    text-align: center;
+}
+.pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 20px 0;
+}
+.picture {
+    width: 50px;
+    height: 50px;
+}
+.conversores2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+}
+#moedas2{
+    margin-right: 20px;
+    width: 120px;
+    height: 50px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+.valor2{
+    width: 120px;
+    height: 48px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    text-align: center;
+}
+.btn{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+}
+.btnConverter{
+    width: 195px;
+    height: 56px;
+    border: 15px;
+    border-radius: 8px;
+    background-color: #009B53;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.btnConverter:hover{
+    background-color: #008346;
+}
+.btnConverter:focus {
+    outline: thin dotted;
+       outline: 0px auto -webkit-focus-ring-color;
+       outline-offset: 0px;
+}
+footer{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #009B53;
+}
+footer a{
+    display: flex;
+    color: white;
+    margin-left: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+}
+footer img{
+    height: 20px;
+    width: 20px;
+    margin-right: 0px;
+}
+.footerfooter{
+    display: flex;
+}
+.fotos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 25px;
+}
+.github{
+    margin-right: -13px;
+}
