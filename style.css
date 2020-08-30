@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+@media screen and (max-width: 1350px) {#coinman{display:none;}}  
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    height: 100%;
+}
+nav{
+    width: 100%;
+    height: 10vh;
+    background-color: #009B53;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /*centralizados verticalmente*/
+    position: fixed; /*para manter a barra fixada na pagina inteira*/
+}
+.navesquerda{
+    display: flex;
+    align-items: center;
+    padding: 15px; /*margem interna*/
+}
+.logomarca{
+    width: 35px;
+    height: 52px;
+    margin: 0px 0px 0px 15px; /*1 - top, 2 - right, 3 - bottom, 4 - left*/ /*ou usar margin-left, right etc*/
+    cursor:pointer;
+}
+.navdireita{
+    display: flex;
+    margin-left: 55px;
+    align-items: center;
+}
+.menu{
+    width: 62px;
+    height: 36px;
+    display: flex;
+    float: right;
+    margin-right: 30px;
+    cursor:pointer;
+}
+nav ul li{
+    list-style: none;
+    padding: 15px;
+    display: flex;
+    float: left;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+}
+.bgHeader{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bgHeader img{
+    width: 448px;
+    height: 218px;
+    margin-top: -230px;
+    margin-bottom: -300px;
+    margin-left: 0px;
+}
+.conversores {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#moedas1{
+    margin-right: 20px;
+    width: 120px;
+    height: 50px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+.valor{
+    width: 120px;
+    height: 48px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    text-align: center;
+}
+.pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 20px 0;
+}
+.picture {
+    width: 50px;
+    height: 50px;
+}
+.conversores2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+}
+#moedas2{
+    margin-right: 20px;
+    width: 120px;
+    height: 50px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+.valor2{
+    width: 120px;
+    height: 48px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    text-align: center;
+}
+.btn{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+}
+.btnConverter{
+    width: 195px;
+    height: 56px;
+    border: 15px;
+    border-radius: 8px;
+    background-color: #009B53;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor:pointer;
+}
+.btnConverter:hover{
+    background-color: #008346;
+}
+.btnConverter:focus {
+    outline: thin dotted;
+       outline: 0px auto -webkit-focus-ring-color;
+       outline-offset: 0px;
+   }
+.para {
+    display: flex;
+    justify-content: center;
+}
+.abaixo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #009B53;
+    position: relative;
+}
+.abaixo .coinman{
+    display: flex;
+    align-items: center;
+    margin-right: 3vh;
+    float: right;
+}
+.abaixo a{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: white;
+    margin-left: 35px;
+    text-decoration: none;
+}
+.abaixo .coinman img{
+    width: 600px;
+    height: 600px;
+}
+.infos h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 0 0 35px;
+}
+.infos li{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    color: white;
+    margin-left: 35px;
+    padding: 20px;
+}
+.infos p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: white;
+    margin-left: 35px;
+    text-align: left;
+}
+.github{
+    margin: 0 5.5px 0 5px;
+}
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: #009B53;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.35s; /* 0.5 second transition effect to slide in the sidenav */
+    box-shadow: -1px 0px 10px rgba(0, 0, 0, 0.356); /*colocar sombras*/
+  }
+  .sidenav img{
+    height: 16px;
+    width: 16px;
+    margin-right: px !important;
+  }
+  .sidenav .insta{
+    margin-left: -20px;
+  }
+  .sidenav .fotos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    margin: -25px 0 0 0;
+  }
+  .sidenav .github {
+      margin: 0 0 0 -3.5px;
+  }
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 20px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.2s;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .sidenav .traco {
+    border-top: 1px solid rgba(235, 235, 235, 0.418);
+    margin-top: -1vh;
+    box-shadow: 0px -6px 3px rgba(0, 0, 0, 0.021); /*colocar sombras*/
+  }
+  .sidenav .copy{
+      font-size: 18px;
+  }
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }

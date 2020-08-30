@@ -1,53 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" href="../img/logo.png"/>
+    <link rel="icon" href="./logo.png"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conversor de Moedas</title>
-    <link rel="stylesheet" media="screen and (min-width: 701px)" type="text/css" href="css/style.css"/>
-    <link rel="stylesheet" media="screen and (max-width: 700px)" type="text/css" href="css/style-mobile.css"/>
-    <script language="javascript" src="/js/script.js"></script>
+    <link rel="stylesheet" media="screen and (min-width: 701px)" type="text/css" href="./style.css"/>
+    <link rel="stylesheet" media="screen and (max-width: 700px)" type="text/css" href="./style-mobile.css"/>
+    <script language="javascript" src="./script.js"></script>
 </head>
 <body>
     <nav class="barra">   <!--divido em navesquerda e direita para facilitar no css-->
         <div class="navesquerda">
-            <img src="../img/logo.png" class="logomarca" alt="logomarca"/>  
+            <a onclick="window.location.reload()"><img src="./logo.png" class="logomarca" alt="logomarca"/></a>
+              
         </div>
         <div class="navdireita">
             <ul>
-                <img class="menu" src="/img/traços.png" alt="menu"/>
+                <a onclick="openNav()"> <img class="menu" src="./tracos.png" alt="menu"/> </a>
             </ul>
         </div>
     </nav>
-    <!--  -->
-
+<!-- menu lateral -->
+    <div id="mySidenav" class="sidenav" id="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a class="traco">
+        <a href="#sobre">Sobre</a>
+        <div class="final"><a class="copy">&copy; Pedro Franco</a></div>
+        <div class="fotos">
+            <a href="//github.com/stashox"> <img src="./github.png" alt="github" title="meu git hub" class="github"/> </a>
+            <a href="//www.instagram.com/pedrokfranco/"> <img src="./insta.png" alt="instagram" title="meu instagram" class="insta"/> </a>
+        </div>    
+        </a>
+      </div>
+<!-- logo -->
     <header>
         <div class="bgHeader">
-            <img src="img/logotext.png" alt="logo" title="logo conversor"/>
+            <img src="./logotext.png" alt="logo" title="logo conversor"/>
         </div> 
     </header>
-
+<!-- parte do conversor -->
     <div class="conversores">
         <select name="moeda" class="moeda1" id="moedas1" onkeyup="convertCurrency();">
             <option value="BRL">BRL R$</option>
             <option value="CAD">CAD $</option>
             <option value="USD">USD $</option>
+            <option value="EUR">EUR $</option>
+            <option value="PLN">PLN $</option>
+            <option value="PHP">PHP $</option>
+            <option value="AUD">AUD $</option>
             <option value="HKD">HKD $</option>
+            <option value="RON">RON $</option>
+            <option value="IDR">IDR $</option>
             <option value="ISK">ISK $</option>
+            <option value="CNY">CNY $</option>
+            <option value="NOK">NOK $</option>
+            <option value="NZD">NZD $</option>
             <option value="JPY">JPY $</option>
         <input class="valor" id = "valor1" type="number" name="valor" value="" placeholder="0.00" step="0.01">
     </div>
     <div class="pic">
-        <img src="/img/arrow.png" class="picture"/>
+        <img src="./arrow.png" class="picture"/>
     </div>
     <div class="conversores2">
         <select name="moeda" class="moeda2" id="moedas2">
-            <option value="CAD">CAD $</option>
             <option value="USD">USD $</option>
             <option value="BRL">BRL R$</option>
+            <option value="CAD">CAD $</option>
+            <option value="EUR">EUR $</option>
+            <option value="PLN">PLN $</option>
+            <option value="PHP">PHP $</option>
+            <option value="AUD">AUD $</option>
             <option value="HKD">HKD $</option>
+            <option value="RON">RON $</option>
+            <option value="IDR">IDR $</option>
             <option value="ISK">ISK $</option>
+            <option value="CNY">CNY $</option>
+            <option value="NOK">NOK $</option>
+            <option value="NZD">NZD $</option>
             <option value="JPY">JPY $</option>
         <input class="valor2" id="valor2" type="number" name="valor2" value="" placeholder="0.00" step="0.01" disabled>
     </div>
@@ -56,16 +86,19 @@
             Converter
         </button>
     </div>
-
-    <footer class="rodape">
-        <div class="footerfooter"> 
-            <a>&copy; Feito por Pedro Franco</a>
-            <div class="fotos">
-                <a href="//github.com/stashox/OrangeHost"> <img src="/img/github.png" alt="github" title="meu git hub" class="github"/> </a>
-                <a href="//www.instagram.com/pedrokfranco/"> <img src="/img/insta.png" alt="instagram" title="meu instagram" class="insta"/> </a>
-            </div>
+    <!-- informações -->
+    <div class="abaixo" id="sobre">
+        <div class="infos">
+        <h1>Fatores que influenciam no preço da moeda</h1>
+        <li>Força e fraqueza</li>
+        <p>No dia em que essas cotações foram extraídas, o real estava mais forte do que a<br>libra síria e do peso argentino e mais fraca do que o dólar,o franco e a libra esterlina.<br> Mas é importante lembrar que o que faz uma moeda ser forte ou fraca em relação a<br>uma outra não é a sua cotaçãopontual. A moeda é um espelho da economia de um país,<br> então, a questão depende das condições econômicas que os países apresentam. <br>O euro, quando foi criado, valia menos que o dólar. Agora vale cerca de 20% mais.<br>Dessa maneira pode-se verificar que, ultimamente o dólar tem perdido força.</p>
+        <li>Oferta e Procura</li>
+        <p>Às vezes "pesos pesados" atuam em um deles e afetam a lei da oferta e procura, por exemplo,<br>quando o governo federal tem que pagar alguma parcela grande de empréstimos feitos em<br>bancos do exterior, o Banco Central compra milhões ou até bilhões de dólares no mercado<br>oficial afetando a cotação para cima. A lei de oferta e procura diz que se muita gente que<br>comprar um produto e ele não tem uma oferta abundante o preço sobe, e ao contrário se<br>um produto tem muita abundância e poucos compradores o preço cai.</p>
+        <a href="//educacao.uol.com.br/disciplinas/matematica/cambio-entenda-a-conversao-de-moedas.htm">Fonte: UOL</a>
         </div>
-    </footer>
-    
+        <div class="coinman">
+            <img src="./man.svg" id="coinman" alt="Imagem ilustrativa" title="Fonte: Freepik">
+    </div>
+    <!-- rodape -->
 </body>
 </html>
